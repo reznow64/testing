@@ -47,7 +47,7 @@ class Window(QtWidgets.QWidget):
         self.g.move(150,150)
         self.g.doubleClicked.connect(self.on_click_inf)
 
-    @pyqtSlot()
+    #@pyqtSlot()
     def on_click_inf(self):
         wizardInf = MyWizardInf(ex) 
         wizardInf.setOption(QtWidgets.QWizard.NoDefaultButton, True)
